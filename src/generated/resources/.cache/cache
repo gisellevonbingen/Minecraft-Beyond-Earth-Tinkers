@@ -57,3 +57,8 @@ ce5a5a5aed086ff798b8898733aef96887032cdd data/beyond_earth/recipes/smeltery/melt
 978c8b7b23c95cc8351ab0f2b62a81ab9eb3749e data/beyond_earth/recipes/smeltery/melting/metal/ostrum/sheetmetal.json
 d58e9136fc683fa04d37f3e1cd70ca9643883a61 data/beyond_earth/recipes/smeltery/melting/metal/ostrum/wire.json
 0603f6eae575a6407a1e5d041f8ff4863dce3f73 data/beyond_earth/recipes/smeltery/melting/metal/steel/compresseds.json
+77b45a76c1323a0a78dffcef3fb79a5c588e747f data/beyond_earth/tags/fluids/molten_desh.json
+1536adbdd424d8c11ad377181b529795fbc9816a data/beyond_earth/tags/fluids/molten_ostrum.json
+3652d5f4184443251d4f2466cbe0e0f918160636 data/forge/tags/fluids/molten_desh.json
+ac258073f6b93cc3c948479773e97fb2e2f26ae9 data/forge/tags/fluids/molten_ostrum.json
+753735526cde5377333bae8f3fae1fa02bdd9ec7 data/tconstruct/tags/fluids/tooltips/metal.json

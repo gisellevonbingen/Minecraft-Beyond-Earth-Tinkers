@@ -2,6 +2,7 @@ package net.mrscauthd.beyond_earth.compat.tinkers;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
@@ -33,10 +34,12 @@ public class TinkersCompat extends CompatibleMod
 	public void onGatherData(GatherDataEvent event)
 	{
 		DataGenerator generator = event.getGenerator();
+		ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
 		if (event.includeServer() == true)
 		{
 			generator.addProvider(new SmelteryRecipesGenerator(generator));
+			generator.addProvider(new FluidTagGenerator(generator, existingFileHelper));
 		}
 
 	}

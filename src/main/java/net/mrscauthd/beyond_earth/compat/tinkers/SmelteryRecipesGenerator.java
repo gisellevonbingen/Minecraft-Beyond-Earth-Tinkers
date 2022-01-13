@@ -6,18 +6,22 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.tags.Tag.Named;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.common.crafting.conditions.ICondition;
 import net.minecraftforge.common.crafting.conditions.NotCondition;
 import net.minecraftforge.common.crafting.conditions.TagEmptyCondition;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.mrscauthd.beyond_earth.BeyondEarthMod;
+import net.mrscauthd.beyond_earth.ModInit;
 import slimeknights.mantle.recipe.data.ConsumerWrapperBuilder;
 import slimeknights.tconstruct.common.data.BaseRecipeProvider;
 import slimeknights.tconstruct.fluids.TinkerFluids;
 import slimeknights.tconstruct.library.data.recipe.ICommonRecipeHelper;
 import slimeknights.tconstruct.library.data.recipe.ISmelteryRecipeHelper;
 import slimeknights.tconstruct.library.recipe.FluidValues;
+import slimeknights.tconstruct.library.recipe.casting.ItemCastingRecipeBuilder;
+import slimeknights.tconstruct.library.recipe.melting.MeltingRecipeBuilder;
 
 public class SmelteryRecipesGenerator extends BaseRecipeProvider implements ISmelteryRecipeHelper, ICommonRecipeHelper
 {
@@ -40,7 +44,7 @@ public class SmelteryRecipesGenerator extends BaseRecipeProvider implements ISme
 		this.addMeltingRecipes(consumer);
 		this.addCastingRecipes(consumer);
 	}
-	
+
 	@Override
 	public ICondition tagCondition(String name)
 	{
@@ -97,6 +101,8 @@ public class SmelteryRecipesGenerator extends BaseRecipeProvider implements ISme
 		}
 
 		this.compressedMelting(consumer, metalFolder, TinkerFluids.moltenSteel.get(), "steel");
+
+		MeltingRecipeBuilder.melting(Ingredient.of(ModInit.COAL_LANTERN_ITEM.get()), TinkerFluids.moltenIron.get(), FluidValues.NUGGET * 8).save(this.withCondition(consumer), modResource(metalFolder + "iron/coal_lantern"));
 	}
 
 	private void compressedMelting(Consumer<FinishedRecipe> consumer, String folder, Fluid fluid, String name)
@@ -116,6 +122,7 @@ public class SmelteryRecipesGenerator extends BaseRecipeProvider implements ISme
 			this.metalTagCasting(consumer, compat.getFluid(), compat.getName(), metalFolder, false);
 		}
 
+		ItemCastingRecipeBuilder.tableRecipe(ModInit.COAL_LANTERN_ITEM.get()).setFluidAndTime(TinkerFluids.moltenIron, true, FluidValues.NUGGET * 8).setCast(ModInit.COAL_TORCH_ITEM.get(), true).save(this.withCondition(consumer), modResource(metalFolder + "iron/coal_lantern"));
 	}
 
 	@Override

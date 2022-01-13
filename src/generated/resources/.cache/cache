@@ -13,6 +13,7 @@ a266f262a383cac031443738a1e61e347e28696c data/beyond_earth/recipes/smeltery/cast
 45a613595eeafdde54e210c6d3e315e35d5b5b11 data/beyond_earth/recipes/smeltery/casting/metal/desh/rod_sand_cast.json
 4272e57fa41b12636a08480f24d1b83bd95251e2 data/beyond_earth/recipes/smeltery/casting/metal/desh/wire_gold_cast.json
 bb8e9ec0e539cb420d5a00396a16450849deee81 data/beyond_earth/recipes/smeltery/casting/metal/desh/wire_sand_cast.json
+ca5b0b07419e8ae4d17f311904c5d9b941a59508 data/beyond_earth/recipes/smeltery/casting/metal/iron/coal_lantern.json
 6812bc1f92f713bb7560309cccf2a36a3d8f8d6f data/beyond_earth/recipes/smeltery/casting/metal/ostrum/block.json
 a354fd191c69a9fe184e1750b474879b3575ebed data/beyond_earth/recipes/smeltery/casting/metal/ostrum/coin_gold_cast.json
 8a206d05c0abd093e263250c7a2dd2b6542564b5 data/beyond_earth/recipes/smeltery/casting/metal/ostrum/coin_sand_cast.json
@@ -42,6 +43,7 @@ fd72b1246b59eb688c684691a90fb3f28d06300d data/beyond_earth/recipes/smeltery/melt
 04868c2b71c78779dd1b90038949d6044219f2c4 data/beyond_earth/recipes/smeltery/melting/metal/desh/rod.json
 3dbd20298ebeb0d32520034799350b5d17df0994 data/beyond_earth/recipes/smeltery/melting/metal/desh/sheetmetal.json
 f27ee309e502492c8db7d81bc95473a9737c78c1 data/beyond_earth/recipes/smeltery/melting/metal/desh/wire.json
+2dbabbcacdf5efb7b0cc065c4feffd9646014e04 data/beyond_earth/recipes/smeltery/melting/metal/iron/coal_lantern.json
 a12fd7efeffb0f46d79a7404377365e12ff43782 data/beyond_earth/recipes/smeltery/melting/metal/ostrum/block.json
 4b26912b5acb1aeeb60c875bfa1ee95ad7ae4f6d data/beyond_earth/recipes/smeltery/melting/metal/ostrum/coin.json
 2e97a903165f92fed2e0a7ab81a163e05025eda8 data/beyond_earth/recipes/smeltery/melting/metal/ostrum/compresseds.json

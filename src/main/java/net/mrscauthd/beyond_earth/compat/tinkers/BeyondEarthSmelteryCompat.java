@@ -11,6 +11,7 @@ public enum BeyondEarthSmelteryCompat
 {
 	DESH(TinkersBeyondEarthFluids.MOLTEN_DESH, Byproduct.COPPER),
 	OSTRUM(TinkersBeyondEarthFluids.MOLTEN_OSTRUM, Byproduct.IRON),
+	CALORITE(TinkersBeyondEarthFluids.MOLTEN_CALORITE, Byproduct.GOLD),
 	// EOL
 	;
 

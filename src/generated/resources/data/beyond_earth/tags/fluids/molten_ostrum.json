@@ -1,7 +1,13 @@
 {
   "replace": false,
   "values": [
-    "beyond_earth:molten_ostrum",
-    "beyond_earth:flowing_molten_ostrum"
+    {
+      "id": "beyond_earth:molten_ostrum",
+      "required": false
+    },
+    {
+      "id": "beyond_earth:flowing_molten_ostrum",
+      "required": false
+    }
   ]
 }

@@ -1,7 +1,13 @@
 {
   "replace": false,
   "values": [
-    "beyond_earth:molten_calorite",
-    "beyond_earth:flowing_molten_calorite"
+    {
+      "id": "beyond_earth:molten_calorite",
+      "required": false
+    },
+    {
+      "id": "beyond_earth:flowing_molten_calorite",
+      "required": false
+    }
   ]
 }

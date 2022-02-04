@@ -109,7 +109,7 @@ public class SmelteryRecipesGenerator extends BaseRecipeProvider implements ISme
 	{
 		String prefix = folder + "/" + name + "/";
 		String tag = COMPRESSEDS;
-		this.metalMeltingBase(consumer, fluid, FluidValues.INGOT, tag + "/" + name, 1.0F, prefix + tag, true);
+		this.tagMelting(consumer, fluid, FluidValues.INGOT, tag + "/" + name, 1.0F, prefix + tag, true);
 	}
 
 	private void addCastingRecipes(Consumer<FinishedRecipe> consumer)

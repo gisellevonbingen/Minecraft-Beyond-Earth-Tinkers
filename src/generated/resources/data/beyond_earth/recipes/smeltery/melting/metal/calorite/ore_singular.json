@@ -1,0 +1,44 @@
+{
+  "type": "tconstruct:ore_melting",
+  "conditions": [
+    {
+      "base": "forge:ores/calorite",
+      "subtracted": [
+        "forge:ore_rates/sparse",
+        "forge:ore_rates/dense"
+      ],
+      "type": "tconstruct:tag_difference_present"
+    },
+    {
+      "modid": "tconstruct",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "rate": "metal",
+  "ingredient": {
+    "type": "mantle:difference",
+    "base": {
+      "tag": "forge:ores/calorite"
+    },
+    "subtracted": [
+      {
+        "tag": "forge:ore_rates/sparse"
+      },
+      {
+        "tag": "forge:ore_rates/dense"
+      }
+    ]
+  },
+  "result": {
+    "fluid": "beyond_earth:molten_calorite",
+    "amount": 180
+  },
+  "temperature": 500,
+  "time": 125,
+  "byproducts": [
+    {
+      "fluid": "tconstruct:molten_gold",
+      "amount": 180
+    }
+  ]
+}

@@ -20,8 +20,13 @@ public class FluidTagGenerator extends FluidTagsProvider
 	{
 		this.tagAll(TinkersBeyondEarthFluids.MOLTEN_DESH);
 		this.tagAll(TinkersBeyondEarthFluids.MOLTEN_OSTRUM);
+		this.tagAll(TinkersBeyondEarthFluids.MOLTEN_CALORITE);
 
-		this.tag(TinkerTags.Fluids.METAL_TOOLTIPS).addTags(TinkersBeyondEarthFluids.MOLTEN_DESH.getForgeTag(), TinkersBeyondEarthFluids.MOLTEN_OSTRUM.getForgeTag());
+		this.tag(TinkerTags.Fluids.METAL_TOOLTIPS).addTags(
+				TinkersBeyondEarthFluids.MOLTEN_DESH.getForgeTag(),
+				TinkersBeyondEarthFluids.MOLTEN_OSTRUM.getForgeTag(),
+				TinkersBeyondEarthFluids.MOLTEN_CALORITE.getForgeTag()
+				);
 	}
 
 	/** Tags this fluid using local tags */
